@@ -7,5 +7,9 @@
     "description": "The iconic iron lattice tower on the Champ de Mars in Paris.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
     "link": "https://www.toureiffel.paris/"
-  }
+  },
+
+  // ici
+  
+  // juste au dessus de ce commentaire, ajoute le bloc json copié.
 ]
