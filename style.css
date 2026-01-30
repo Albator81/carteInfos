@@ -2,19 +2,37 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100%;
+    color: #333;
 }
 
 #map {
     width: 100%;
-    height: 100vh;
+    height: 70vh; /* Réduit pour laisser de la place au texte au-dessus */
 }
 
 .container {
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
     line-height: 1.6;
+}
+
+.main-content {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.intro {
+    background: #f9f9f9;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 5px solid #007bff;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
 img {
@@ -41,4 +59,11 @@ button {
     cursor: pointer;
     font-size: 14px;
     padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+button:hover {
+    background: #f0f0f0;
 }

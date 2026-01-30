@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Add Point</title>
+    <title>Administration - Ajouter un point</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
     <style>
@@ -11,14 +11,14 @@
         .form-group { margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: bold; }
         input, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+        button { background: #28a745; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
         #json-output { background: #f8f9fa; padding: 15px; border: 1px solid #ddd; border-radius: 4px; white-space: pre-wrap; margin-top: 20px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Add New Map Point</h1>
-        <p>1. Click on the map to set coordinates.</p>
+        <h1>Ajouter un nouveau point sur la carte</h1>
+        <p>1. Cliquez sur la carte pour définir les coordonnées.</p>
         <div id="admin-map"></div>
         
         <form id="point-form">
@@ -31,7 +31,7 @@
                 <input type="text" id="lng" readonly>
             </div>
             <div class="form-group">
-                <label>Title</label>
+                <label>Titre</label>
                 <input type="text" id="title" required>
             </div>
             <div class="form-group">
@@ -39,28 +39,28 @@
                 <textarea id="description" rows="4"></textarea>
             </div>
             <div class="form-group">
-                <label>Image URL</label>
+                <label>URL de l'image</label>
                 <input type="text" id="image" placeholder="https://...">
             </div>
             <div class="form-group">
-                <label>Link</label>
+                <label>Lien (Site web)</label>
                 <input type="text" id="link" placeholder="https://...">
             </div>
-            <button type="submit">Generate JSON Entry</button>
+            <button type="submit">Générer l'entrée JSON</button>
         </form>
 
         <div id="result-section" style="display:none;">
-            <h2>JSON Entry</h2>
-            <p>Copy and append this to your <code>data.json</code> file:</p>
+            <h2>Entrée JSON</h2>
+            <p>Copiez et ajoutez ceci à votre fichier <code>data.json</code> :</p>
             <div id="json-output"></div>
         </div>
         <br>
-        <a href="index.html">View Map</a>
+        <a href="index.html">Voir la carte</a>
     </div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        const map = L.map('admin-map').setView([49.2583, 4.0317], 13);
+        const map = L.map('admin-map').setView([49.1667, 5.0000], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
         let marker;

@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MomCarte - Map</title>
+    <title>Faire village en Argonne - Carte</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container main-content">
+        <h1>Faire village en Argonne</h1>
+        <section class="intro">
+            <p>Bienvenue sur notre projet de cartographie participative. Cette plateforme permet de visualiser et de documenter les points d'intérêt, les initiatives locales et l'histoire de notre territoire en Argonne.</p>
+        </section>
+    </div>
+
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        const map = L.map('map').setView([49.2583, 4.0317], 13);
+        const map = L.map('map').setView([49.1667, 5.0000], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors'
@@ -25,7 +32,7 @@
                     const marker = L.marker([point.lat, point.lng]).addTo(map);
                     marker.bindPopup(`
                         <b>${point.title}</b><br>
-                        <button onclick="window.location.href='detail.html?id=${point.id}'">View Details</button>
+                        <button onclick="window.location.href='detail.html?id=${point.id}'">Voir les détails</button>
                     `);
                 });
             });

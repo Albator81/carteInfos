@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Point Details</title>
+    <title>Détails du point</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <a href="index.html">← Back to Map</a>
+        <a href="index.html">← Retour à la carte</a>
         <div id="content">
-            <h1 id="title">Loading...</h1>
+            <h1 id="title">Chargement...</h1>
             <img id="image" src="" alt="" style="max-width: 100%; height: auto; display: none;">
             <p id="description"></p>
-            <a id="link" href="#" target="_blank" style="display: none;">Visit Website</a>
+            <a id="link" href="#" target="_blank" style="display: none;">Visiter le site web</a>
         </div>
     </div>
 
@@ -39,7 +39,7 @@
                         link.style.display = 'inline-block';
                     }
                 } else {
-                    document.getElementById('title').innerText = "Point not found";
+                    document.getElementById('title').innerText = "Point non trouvé";
                 }
             });
     </script>
