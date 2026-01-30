@@ -9,7 +9,17 @@
     "link": "https://www.toureiffel.paris/"
   },
 
-  // ici
+  {
+  "id": 1769806283541,
+  "lat": 48.978918,
+  "lng": 4.591942,
+  "title": "Lycée de la nature et du vivant ",
+  "description": "Lycée agricole",
+  "image": "",
+  "link": "https://eplefpachalonsenchampagne.fr/le-lycee"
+},
+
+  
   
   // juste au dessus de ce commentaire, ajoute le bloc json copié.
 ]
