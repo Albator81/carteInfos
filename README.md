@@ -15,11 +15,10 @@ Pour mon collègue (qui n'est pas très à l'aise avec l'informatique, pas de pa
 5.  **Mettez à jour la carte** :
     *   Un texte bizarre (du JSON) va apparaître en bas de la page.
     *   Copiez ce texte.
-    *   Ouvrez le fichier `data.json`.
-    *   Collez ce texte à l'intérieur du crochet `[` et avant le dernier crochet `]`.
-    *   **Attention** : Assurez-vous qu'il y a bien une virgule entre chaque bloc de données.
+    *   Clique sur [ce lien pour ajouter](https://github.com/Albator81/carteInfos/edit/main/data.json).
+    *   Collez ce texte à l'intérieur du crochet `{` et avant le dernier crochet `}`.
 
 ## 🚀 Publication sur GitHub
 Une fois les fichiers modifiés dans votre dossier local :
-1. Envoyez (Push) les changements sur votre dépôt GitHub.
-2. Activez **GitHub Pages** dans les réglages (Settings > Pages) pour rendre le site accessible à tous.
+1. Appuyez sur le bouton **Commettre des changements...**
+2. Attendez un peu, et le point et la page vont être ajoutés et visibles sur le site
