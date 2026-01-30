@@ -3,23 +3,20 @@
     "id": 1,
     "lat": 48.8584,
     "lng": 2.2945,
-    "title": "Eiffel Tower",
-    "description": "The iconic iron lattice tower on the Champ de Mars in Paris.",
+    "title": "Tour Eiffel",
+    "description": "La célèbre tour de fer de Paris.",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
     "link": "https://www.toureiffel.paris/"
   },
-
   {
-  "id": 1769806283541,
-  "lat": 48.978918,
-  "lng": 4.591942,
-  "title": "Lycée de la nature et du vivant ",
-  "description": "Lycée agricole",
-  "image": "",
-  "link": "https://eplefpachalonsenchampagne.fr/le-lycee"
-},
+    "id": 1769806283541,
+    "lat": 48.978918,
+    "lng": 4.591942,
+    "title": "Lycée de la nature et du vivant",
+    "description": "Lycée agricole",
+    "image": "",
+    "link": "https://eplefpachalonsenchampagne.fr/le-lycee"
+  }, 
 
   
-  
-  // juste au dessus de ce commentaire, ajoute le bloc json copié.
 ]
