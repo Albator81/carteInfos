@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "title": "Eiffel Tower",
+    "description": "The iconic iron lattice tower on the Champ de Mars in Paris.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
+    "link": "https://www.toureiffel.paris/"
+  }
+]

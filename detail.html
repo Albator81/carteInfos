@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">← Back to Map</a>
+        <div id="content">
+            <h1 id="title">Loading...</h1>
+            <img id="image" src="" alt="" style="max-width: 100%; height: auto; display: none;">
+            <p id="description"></p>
+            <a id="link" href="#" target="_blank" style="display: none;">Visit Website</a>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = parseInt(urlParams.get('id'));
+
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                const point = data.find(p => p.id === id);
+                if (point) {
+                    document.getElementById('title').innerText = point.title;
+                    document.getElementById('description').innerText = point.description;
+                    if (point.image) {
+                        const img = document.getElementById('image');
+                        img.src = point.image;
+                        img.style.display = 'block';
+                    }
+                    if (point.link) {
+                        const link = document.getElementById('link');
+                        link.href = point.link;
+                        link.style.display = 'inline-block';
+                    }
+                } else {
+                    document.getElementById('title').innerText = "Point not found";
+                }
+            });
+    </script>
+</body>
+</html>
