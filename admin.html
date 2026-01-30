@@ -51,7 +51,8 @@
 
         <div id="result-section" style="display:none;">
             <h2>Entrée JSON</h2>
-            <p>Copiez et ajoutez ceci à votre fichier <code>data.json</code> :</p>
+            <p>Cliquez sur le bouton pour copier, puis ajoutez ceci à votre fichier <code>data.json</code> :</p>
+            <button type="button" onclick="copyJson()" style="background: #17a2b8; margin-bottom: 10px;">Copier le code JSON</button>
             <div id="json-output"></div>
         </div>
         <br>
@@ -87,6 +88,13 @@
             output.innerText = JSON.stringify(newPoint, null, 2) + ",";
             document.getElementById('result-section').style.display = 'block';
         };
+
+        function copyJson() {
+            const text = document.getElementById('json-output').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Code JSON copié !");
+            });
+        }
     </script>
 </body>
 </html>
