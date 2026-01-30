@@ -20,3 +20,6 @@ La carte principale est accessible via [ce lien](https://albator81.github.io/car
 
 1. Appuyez sur le bouton **Commettre des changements...** (en anglais: **Commit changes...**)
 2. Attendez un peu, et le point et la page vont être ajoutés et visibles sur le site.
+
+## Partagez ce lien
+- https://albator81.github.io/carteInfos/
